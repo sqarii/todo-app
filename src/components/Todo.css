@@ -1,0 +1,66 @@
+.todos-input-cont {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    background-color: #fff;
+    border-radius: 5px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* todo checkbox */
+.todos-checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    /* checkbox circle size */
+    cursor: pointer;
+}
+
+.todos-checkbox:focus {
+    outline: none;
+}
+/* 
+  .todos-checkmark {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid black;
+  }  */
+
+.todos-input {
+    font-family: "Josefin Sans", sans-serif;
+    height: 100%;
+    width: calc(100% - 40px);
+    padding: 18px 12px;
+    font-size: 0.75rem;
+    border: none;
+    /* set max length */
+}
+
+.todos-input::placeholder {
+    font-family: "Josefin Sans", sans-serif;
+    color: hsl(236, 9%, 61%);
+}
+
+.todos-input:focus {
+    outline: none;
+}
+
+.todos-btn {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todos-btn-delete > img {
+    width: 12px;
+}
