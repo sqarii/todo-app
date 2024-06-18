@@ -2,6 +2,7 @@ import "./App.css";
 import React, { useState, useEffect } from "react";
 import Todo from "./Todo";
 import bgMobileLight from "./images/bg-mobile-light.jpg";
+import bgDesktopLight from "./images/bg-desktop-light.jpg";
 import moonBtn from "./images/icon-moon.svg";
 import Check from "./images/icon-check.svg";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
@@ -125,7 +126,14 @@ function App() {
     return (
         <>
             <section className="app-cont">
-                <img src={bgMobileLight} alt="banner" />
+                <img
+                    src={
+                        window.innerWidth > 1024
+                            ? bgDesktopLight
+                            : bgMobileLight
+                    }
+                    alt="banner"
+                />
 
                 <section className="app">
                     <header>
